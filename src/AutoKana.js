@@ -4,6 +4,7 @@
  * @returns {string}
  */
 function ltrim(str, chars) {
+  if (!str) return;
   // eslint-disable-next-line no-param-reassign
   chars = !chars ? ' \\s\u00A0' : chars.replace(/([[\]().?/*{}+$^:])/g, '$1');
 
